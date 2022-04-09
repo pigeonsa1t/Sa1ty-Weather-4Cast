@@ -23,5 +23,7 @@ WHEN I view future weather conditions for that city
 WHEN I click on a city in the search history...
  THEN I am again presented with current and future conditions for that city.
 ____________________________________________________________________________
-\06-server-side-apis-homework-demo.png
+![06-server-side-apis-homework-demo](https://user-images.githubusercontent.com/100164686/162583144-b89d4c62-a3e3-4940-8756-6c616e9920a7.png)
 ____________________________________________________________________________
+
+ --- made by pigeonsa1t 🕊 ---
