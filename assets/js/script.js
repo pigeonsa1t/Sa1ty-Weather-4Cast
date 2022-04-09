@@ -16,7 +16,7 @@ $(document).ready(function() {
         // drop down for state but search for city
 
 
-       fetch("http://api.openweathermap.org/geo/1.0/direct?q=Savannah&limit=5&appid=b8ca9a84941951b198c6ce015a8fb6e1").then(function(response) {
+       fetch("http://api.openweathermap.org/geo/1.0/direct?q=Savannah&limit=5&").then(function(response) {
            return response.json()
        }).then(function(data) {
            // LAT & LON WILL ONLY EXIST INSIDE OF HERE WITH
