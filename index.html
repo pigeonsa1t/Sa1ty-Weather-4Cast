@@ -10,22 +10,39 @@
 </head>
 <body>
     <div class="container">
+<!-- SEARCH: -->
         <div class="row" style="border: 1px solid black;">
             <aside class="col-3" style="border: 1px solid black;">
-                <h3>Menu</h3>
+                <h3>Search For A City:</h3>
                 <input type="text" id="search-city" class="form-control">
                 <button class="btn btn-primary" id="search-btn">Search</button>
             </aside>
-            <section id="current" class="col-9" style="border: 1px solid black;">
-
+            <section 
+                id="current" class="col-9" style="border: 1px solid black;">
             </section>
-
         </div>
-        <div id="forecast" class="row" style="border: 1px solid black;"></div>
+        <div 
+            id="forecast" class="row" style="border: 1px solid black;">
+        </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
-  integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
-  crossorigin="anonymous"></script>
-    <script src="./assets/js/script.js"></script>
+<!-- SCRIPTS: -->
+    <!-- weather map API -->
+    <script 
+        src="https://pro.openweathermap.org/data/2.5/forecast/hourly?lat={lat}&lon={lon}&appid=bf2422cd4f44398a083d989d14f773b9">
+    </script>
+    <!-- jquery -->
+    <script 
+        src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+        crossorigin="anonymous">
+    </script>
+    <!-- geolocation api -->
+    <script 
+        src="http://api.openweathermap.org/geo/1.0/direct?q=Bloomington,IN,USA&limit={limit}&appid=3d81502bb0a272c480d43713c18f772d">
+    </script>
+    <!-- my main script.js file -->
+    <script 
+        src="./assets/js/script.js">
+    </script>
 </body>
 </html>
