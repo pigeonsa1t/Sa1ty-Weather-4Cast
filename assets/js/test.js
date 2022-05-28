@@ -120,6 +120,7 @@ function renderHistory() {
       getWeather(searchHistory[i]);
     });
     historyListEl.append(storedItem);
+    
   }
 }
 
