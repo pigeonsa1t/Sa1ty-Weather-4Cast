@@ -14,12 +14,12 @@
 
 <body>
     <div>
-        <!-- start of navigation/header -->
         <!-- HEADER -->
         <header class="container">
             <h2>Sa1ty-Weather-4Cast</h2>
         </header>
 
+        <!-- navigation -->
         <!-- SEARCH FOR A CITY -->
         <nav class="container">
             <div id="search" class="row">
@@ -32,20 +32,50 @@
                 </div>
             </div>
         </nav>
-    </div> <!-- end of navigation/header -->
+    </div>
 
     <!-- MAIN BODY -->
     <main class="container">
-        <!-- RESULTS FOR CURRENT FORECAST-->
+
         <section id="forecast" class="container col-9">
-            <h5>Forecast</h5>
-            <div class="row align-items-center">
-                <div class="card">
-                    <!-- display forecast for searched city -->
+            <h3>Forecast:</h3>
+            <div class="forecast row">
+                <div class="col">
+                    <div class="card">
+                        <h5 class="card-title p-2">Date:</h5>
+                        <img src="http://openweathermap.org/img/wn/10d@4x.png" class="card-img-top"
+                            alt="forecast description" />
+
+                        <!-- RESULTS FOR CURRENT FORECAST-->
+                        <div class="card-body">
+                            <h3 class="card-title">Sa1ty Weather Label</h3>
+                            <!--sunny/cloudy/etc-->
+                            <p class="card-text">High Temp / Low Temp</p>
+                            <p class="card-text">Humidity</p>
+                            <p class="card-text">UV Index</p>
+                            <p class="card-text">Precipitation</p>
+                            <p class="card-text">Wind Speed & Direction</p>
+                        </div>
+                        <!-- WHEN I view current weather conditions for that city...
+                THEN I am presented with the city name, the date, an icon repre-
+                sentation of weather conditions, the temperature, the
+                humidity, the wind speed, and the UV index. -->
+
+                        <!-- WHEN I view the UV index...
+                THEN I am presented with a color that indicates whether 
+                the conditions are favorable, moderate, or severe. -->
+
+                    </div>
+                    <!-- WHEN I view future weather conditions for that city...
+                    THEN I am presented with a 5-day forecast that displays the date, 
+                    an icon representation of weather conditions, the
+                    temperature, the wind speed, and the humidity. -->
                 </div>
             </div>
         </section>
-
+        <!-- WHEN I click on a city in the search history...
+        THEN I am again presented with current and future conditions
+        for that city. -->
     </main>
 
     <footer></footer>

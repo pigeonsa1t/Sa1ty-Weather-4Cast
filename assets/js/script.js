@@ -28,6 +28,7 @@ $(document).ready(function () {
   //.coords.latitude
 });
 
+
 // button get-fore-btn - call API
 // button search-btn - use location from browser, put into form
 // add click listeners to both
