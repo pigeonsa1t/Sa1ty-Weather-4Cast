@@ -7,8 +7,8 @@ $(document).ready(function () {
       console.log(position, position.coords.longitude);
       // use append to get weather into box later:
       var card = $("<div>").addClass("card");
-      var lat = $("<h1>").addClass("card-title").text(position.coords.latitude);
-      var lon = $("<h1>")
+      var lat = $("<h2>").addClass("card-title").text(position.coords.latitude);
+      var lon = $("<h2>")
         .addClass("card-title")
         .text(position.coords.longitude);
       $("#current").append(card.append(lat, lon));

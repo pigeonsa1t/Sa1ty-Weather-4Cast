@@ -13,41 +13,35 @@
 </head>
 
 <body>
-    <div class="container align-items-center">
+    <div>
+        <!-- start of navigation/header -->
         <!-- HEADER -->
-        <header class="row py-2">
+        <header class="container">
             <h2>Sa1ty-Weather-4Cast</h2>
         </header>
-    </div>
+
+        <!-- SEARCH FOR A CITY -->
+        <nav class="container">
+            <div id="search" class="row">
+                <div>
+                    <!-- user input -->
+                    <input type="text" id="search-city" class="search-input" placeholder="Search for a city...">
+                    <!-- search button -->
+                    <button class="btn btn-primary" id="search-btn">Search</button>
+                    <!-- this takes long/lat geolocation from browser to call API function-->
+                </div>
+            </div>
+        </nav>
+    </div> <!-- end of navigation/header -->
 
     <!-- MAIN BODY -->
     <main class="container">
-
-        <!-- SEARCH FOR A CITY -->
-        <section id="search" class="container">
-            <!-- -->
-            <div class="row align-items-left">
-                <div class="card" style="width: 35vw;">
-                    <!-- user input -->
-                    <input type="text" id="search-city" class="search-input" placeholder="Search for a city...">
-                    <br />
-                    <!-- search button -->
-                    <button class="btn btn-primary" id="search-btn">Search</button>
-                    <br />
-                    <!-- this takes long/lat geolocation from browser into form -->
-                    <button class="btn btn-primary" id="get-for-btn">Get Forecast</button>
-                    <!-- this button click will call API to pull/display weather-->
-                </div>
-            </div>
-        </section>
-
-        <!-- CURRENT FORECAST-->
-        <section id="forecast" class="container">
+        <!-- RESULTS FOR CURRENT FORECAST-->
+        <section id="forecast" class="container col-9">
             <h5>Forecast</h5>
-            <div class="weather row align-items-center gx-2">
-                <div class="card" style="width: 35vw;">
+            <div class="row align-items-center">
+                <div class="card">
                     <!-- display forecast for searched city -->
-
                 </div>
             </div>
         </section>
